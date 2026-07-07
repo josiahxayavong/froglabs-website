@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Frog Labs favicon: minimal frog mark on a dark rounded tile -->
+  <rect width="64" height="64" rx="14" fill="#070b09"/>
+  <circle cx="22" cy="22" r="9" fill="#4ade80"/>
+  <circle cx="42" cy="22" r="9" fill="#4ade80"/>
+  <ellipse cx="32" cy="39" rx="20" ry="15" fill="#22c55e"/>
+  <circle cx="22" cy="21" r="3.6" fill="#07130b"/>
+  <circle cx="42" cy="21" r="3.6" fill="#07130b"/>
+  <path d="M23 43q9 7 18 0" stroke="#07130b" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+</svg>

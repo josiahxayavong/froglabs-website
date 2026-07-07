@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary SEO -->
+  <title>Blackjack for iPhone — Frog Labs LLC</title>
+  <meta name="description" content="Blackjack by Frog Labs: a beautifully minimal blackjack game for iPhone with a built-in basic strategy trainer, detailed statistics, smooth animations, and full offline play.">
+  <link rel="canonical" href="https://froglabsllc.com/blackjack.html">
+  <meta name="theme-color" content="#070b09">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Frog Labs LLC">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blackjack for iPhone — Frog Labs LLC">
+  <meta property="og:description" content="A beautifully minimal blackjack game with a built-in basic strategy trainer, detailed statistics, and full offline play.">
+  <meta property="og:url" content="https://froglabsllc.com/blackjack.html">
+  <meta property="og:image" content="https://froglabsllc.com/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Fonts (only external dependency) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Blackjack",
+    "operatingSystem": "iOS",
+    "applicationCategory": "GameApplication",
+    "author": {
+      "@type": "Organization",
+      "name": "Frog Labs LLC",
+      "url": "https://froglabsllc.com/"
+    },
+    "description": "A beautifully minimal blackjack game for iPhone with a built-in basic strategy trainer, detailed statistics, and full offline play."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ======================== Header ======================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Frog Labs — home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="12.5" cy="12" r="6.5" fill="#4ade80"/>
+          <circle cx="27.5" cy="12" r="6.5" fill="#4ade80"/>
+          <ellipse cx="20" cy="24.5" rx="15" ry="11" fill="#22c55e"/>
+          <circle cx="12.5" cy="11" r="2.6" fill="#07130b"/>
+          <circle cx="27.5" cy="11" r="2.6" fill="#07130b"/>
+          <path d="M13 27q7 5.5 14 0" stroke="#07130b" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span>Frog Labs</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blackjack.html" aria-current="page">Blackjack</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta" href="#download">Get the app</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ======================== App hero ======================== -->
+    <section class="hero" id="download" aria-labelledby="app-title">
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="product-hero">
+          <!-- App icon placeholder -->
+          <svg class="app-icon reveal" viewBox="0 0 120 120" role="img" aria-label="Blackjack app icon">
+            <defs>
+              <linearGradient id="icon-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#14532d"/>
+                <stop offset="1" stop-color="#07130c"/>
+              </linearGradient>
+              <linearGradient id="icon-spade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#86efac"/>
+                <stop offset="1" stop-color="#34d399"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="120" rx="27" fill="url(#icon-bg)"/>
+            <rect x="0.5" y="0.5" width="119" height="119" rx="26.5" fill="none" stroke="rgba(255,255,255,0.1)"/>
+            <path fill="url(#icon-spade)" d="M60 20C46 37 33 45.5 33 60a13.8 13.8 0 0 0 23.6 9.7C55.8 78 52.4 84.6 46 89h28c-6.4-4.4-9.8-11-10.6-19.3A13.8 13.8 0 0 0 87 60c0-14.5-13-23-27-40Z"/>
+            <text x="60" y="108" text-anchor="middle" font-family="Sora, sans-serif" font-size="15" font-weight="700" fill="#d1fae5">21</text>
+          </svg>
+
+          <div>
+            <p class="eyebrow reveal">iPhone · Card game</p>
+            <h1 class="reveal" style="--reveal-delay:.08s">Blackjack</h1>
+            <p class="lead reveal" style="--reveal-delay:.14s">The classic card game, rebuilt with modern iOS craft. Learn perfect basic strategy, track every hand you play, and enjoy a beautifully animated table — anywhere, no internet required.</p>
+            <div class="btn-row reveal" style="--reveal-delay:.2s">
+              <!-- TODO: replace href with your real App Store URL when the app is live -->
+              <a class="appstore-badge" href="#download" aria-label="Download Blackjack on the App Store (coming soon)">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+                <span class="badge-text">
+                  <span class="badge-small">Download on the</span>
+                  <span class="badge-large">App Store</span>
+                </span>
+              </a>
+              <a class="btn btn-ghost" href="#features">See features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Screenshots ======================== -->
+    <section class="section-tight" aria-labelledby="screens-title">
+      <div class="container">
+        <h2 id="screens-title" class="sr-only">App screenshots</h2>
+        <div class="phones">
+          <div class="phone reveal" role="img" aria-label="iPhone screenshot placeholder showing Blackjack gameplay">
+            <div class="phone-frame">
+              <div class="phone-screen" aria-hidden="true">
+                <div class="mock-status"><span class="mock-pill">♠ Blackjack</span><span class="mock-pill">$1,250</span></div>
+                <p class="mock-label">Dealer shows 10</p>
+                <div class="mock-hand"><span class="mock-card">10♠</span><span class="mock-card down"></span></div>
+                <p class="mock-label">Your hand · 16</p>
+                <div class="mock-hand"><span class="mock-card red">9♥</span><span class="mock-card">7♣</span></div>
+                <div class="mock-actions"><span class="mock-btn primary">Hit</span><span class="mock-btn">Stand</span></div>
+              </div>
+            </div>
+            <p class="phone-caption">Gameplay</p>
+          </div>
+
+          <div class="phone reveal" style="--reveal-delay:.1s" role="img" aria-label="iPhone screenshot placeholder showing detailed statistics">
+            <div class="phone-frame">
+              <div class="phone-screen" aria-hidden="true">
+                <p class="mock-title">Statistics</p>
+                <p class="mock-big">58.3%<span>Win rate</span></p>
+                <div class="mock-stat">
+                  <div class="mock-stat-row"><span>Hands played</span><span>1,204</span></div>
+                  <div class="mock-bar"><span style="width:82%"></span></div>
+                </div>
+                <div class="mock-stat">
+                  <div class="mock-stat-row"><span>Blackjacks</span><span>61</span></div>
+                  <div class="mock-bar"><span style="width:44%"></span></div>
+                </div>
+                <div class="mock-stat">
+                  <div class="mock-stat-row"><span>Best streak</span><span>9</span></div>
+                  <div class="mock-bar"><span style="width:60%"></span></div>
+                </div>
+              </div>
+            </div>
+            <p class="phone-caption">Detailed statistics</p>
+          </div>
+
+          <div class="phone reveal" style="--reveal-delay:.2s" role="img" aria-label="iPhone screenshot placeholder showing the basic strategy trainer">
+            <div class="phone-frame">
+              <div class="phone-screen" aria-hidden="true">
+                <p class="mock-title">Strategy Trainer</p>
+                <div class="mock-question">Hard 16 vs dealer 10<br>What's the play?</div>
+                <div class="mock-choices">
+                  <span class="mock-btn primary">Hit</span>
+                  <span class="mock-btn">Stand</span>
+                  <span class="mock-btn">Double</span>
+                  <span class="mock-btn">Split</span>
+                </div>
+                <div class="mock-toast">✓ Correct — basic strategy says hit</div>
+              </div>
+            </div>
+            <p class="phone-caption">Basic strategy trainer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Features ======================== -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">Everything a blackjack player needs</h2>
+          <p>No clutter, no gimmicks — just a complete, polished game with the tools to make you better at it.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>
+            </div>
+            <h3>Modern vertical interface</h3>
+            <p>Designed for how you actually hold your phone. Every action is reachable with one thumb.</p>
+          </article>
+
+          <article class="card reveal" style="--reveal-delay:.06s">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>
+            </div>
+            <h3>Detailed statistics</h3>
+            <p>Win rate, blackjacks, pushes, streaks, and trainer accuracy — tracked automatically for every hand.</p>
+          </article>
+
+          <article class="card reveal" style="--reveal-delay:.12s">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 1 7 7c0 2.4-1.2 4.3-3 5.6V18a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.4c-1.8-1.3-3-3.2-3-5.6a7 7 0 0 1 7-7z"/><path d="M10 22h4"/></svg>
+            </div>
+            <h3>Basic strategy trainer</h3>
+            <p>Drill the mathematically correct play for every hand, with instant feedback and progress tracking.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4l-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 3z"/></svg>
+            </div>
+            <h3>Beautiful animations</h3>
+            <p>Cards deal, flip, and slide with buttery-smooth motion tuned to feel natural, never showy.</p>
+          </article>
+
+          <article class="card reveal" style="--reveal-delay:.06s">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 9.5a15 15 0 0 1 21 0M5 13a10 10 0 0 1 14 0M8.5 16.5a5 5 0 0 1 7 0"/><circle cx="12" cy="20" r="1"/><path d="M3 3l18 18"/></svg>
+            </div>
+            <h3>Offline gameplay</h3>
+            <p>Play on a flight, on the subway, or off the grid. Everything works with zero connection.</p>
+          </article>
+
+          <article class="card reveal" style="--reveal-delay:.12s">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="m8.5 12 2.3 2.3 4.7-4.6"/></svg>
+            </div>
+            <h3>Clean, intuitive design</h3>
+            <p>Learn it in one hand. No manuals, no menus three levels deep — just you and the cards.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FAQ ======================== -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Frequently asked questions</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details class="faq-item">
+            <summary>Is this real-money gambling? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">No. Blackjack uses virtual chips only, for entertainment and practice. There is no real-money wagering, no way to deposit money, and nothing to win or lose except your practice bankroll.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need an internet connection? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">No. The entire game — gameplay, statistics, and the strategy trainer — works completely offline. Your data stays on your device.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What is the basic strategy trainer? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">Basic strategy is the mathematically optimal way to play every blackjack hand. The trainer deals you scenarios, asks for your decision, and instantly tells you whether it matched the correct play — so perfect strategy becomes second nature.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What statistics does the app track? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">Hands played, wins, losses, pushes, blackjacks, win rate, best streaks, and your strategy trainer accuracy over time. All statistics are stored locally on your device.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Which devices are supported? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">Blackjack is designed for iPhone and supports recent versions of iOS. Check the App Store listing for the current compatibility details.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I report a bug or request a feature? <span class="faq-icon" aria-hidden="true"></span></summary>
+            <p class="faq-body">We'd love to hear from you. Email <a href="mailto:contact@froglabsllc.com">contact@froglabsllc.com</a> or use the <a href="contact.html">contact form</a> — we typically reply within one to two business days.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CTA ======================== -->
+    <section class="section-tight" aria-labelledby="bj-cta-title">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 id="bj-cta-title">Questions about Blackjack?</h2>
+          <p class="lead">Check the support page for troubleshooting, or send us a message directly.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html">Contact us</a>
+            <a class="btn btn-ghost" href="support.html">Visit support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== Footer ======================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Frog Labs — home">
+            <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+              <circle cx="12.5" cy="12" r="6.5" fill="#4ade80"/>
+              <circle cx="27.5" cy="12" r="6.5" fill="#4ade80"/>
+              <ellipse cx="20" cy="24.5" rx="15" ry="11" fill="#22c55e"/>
+              <circle cx="12.5" cy="11" r="2.6" fill="#07130b"/>
+              <circle cx="27.5" cy="11" r="2.6" fill="#07130b"/>
+              <path d="M13 27q7 5.5 14 0" stroke="#07130b" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span>Frog Labs</span>
+          </a>
+          <p>Frog Labs LLC is an independent software studio building high-quality apps for iPhone.</p>
+          <a class="footer-email" href="mailto:contact@froglabsllc.com">contact@froglabsllc.com</a>
+        </div>
+
+        <nav class="footer-col" aria-label="Product">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="blackjack.html">Blackjack</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Legal">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © <span data-year>2026</span> Frog Labs LLC. All rights reserved.</p>
+        <p>Made with care, one detail at a time.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
