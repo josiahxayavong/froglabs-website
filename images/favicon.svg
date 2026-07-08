@@ -1,10 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Frog Labs favicon: minimal frog mark on a dark rounded tile -->
-  <rect width="64" height="64" rx="14" fill="#070b09"/>
-  <circle cx="22" cy="22" r="9" fill="#4ade80"/>
-  <circle cx="42" cy="22" r="9" fill="#4ade80"/>
-  <ellipse cx="32" cy="39" rx="20" ry="15" fill="#22c55e"/>
-  <circle cx="22" cy="21" r="3.6" fill="#07130b"/>
-  <circle cx="42" cy="21" r="3.6" fill="#07130b"/>
-  <path d="M23 43q9 7 18 0" stroke="#07130b" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Frog Labs favicon: full-body frog mark on a dark rounded tile -->
+  <rect width="100" height="100" rx="22" fill="#070b09"/>
+  <g fill="#f0f5f1">
+    <ellipse cx="25" cy="58" rx="10" ry="15" transform="rotate(-28 25 58)"/>
+    <ellipse cx="75" cy="58" rx="10" ry="15" transform="rotate(28 75 58)"/>
+    <circle cx="13" cy="79" r="3"/><circle cx="23" cy="82" r="3"/>
+    <circle cx="87" cy="79" r="3"/><circle cx="77" cy="82" r="3"/>
+    <circle cx="40" cy="72" r="4"/><circle cx="60" cy="72" r="4"/>
+    <circle cx="34" cy="80" r="2.8"/><circle cx="40" cy="83" r="2.8"/><circle cx="46" cy="80" r="2.8"/>
+    <circle cx="66" cy="80" r="2.8"/><circle cx="60" cy="83" r="2.8"/><circle cx="54" cy="80" r="2.8"/>
+  </g>
+  <g stroke="#f0f5f1" stroke-linecap="round" fill="none">
+    <path stroke-width="4.5" d="M19 70 13 79M25 72 23 82M81 70 87 79M75 72 77 82"/>
+    <path stroke-width="9" d="M42 49 40 71M58 49 60 71"/>
+    <path stroke-width="3.6" d="M40 72 34 80M40 72 40 83M40 72 46 80M60 72 66 80M60 72 60 83M60 72 54 80"/>
+  </g>
+  <g fill="#f0f5f1">
+    <ellipse cx="50" cy="36" rx="25" ry="13.5"/>
+    <circle cx="36" cy="24" r="11"/>
+    <circle cx="64" cy="24" r="11"/>
+  </g>
+  <circle cx="37.5" cy="23.5" r="6" fill="#070b09"/>
+  <circle cx="62.5" cy="23.5" r="6" fill="#070b09"/>
+  <circle cx="34.6" cy="20.4" r="2.1" fill="#f0f5f1"/>
+  <circle cx="65.4" cy="20.4" r="2.1" fill="#f0f5f1"/>
 </svg>
