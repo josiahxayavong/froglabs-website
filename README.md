@@ -40,7 +40,7 @@ A fully static website for Frog Labs LLC. Plain HTML, CSS, and vanilla JavaScrip
 | What | Where |
 |---|---|
 | App Store URL | Every `appstore-badge` link — search for `TODO: replace href` in `index.html` and `blackjack.html` |
-| Real app screenshots | The CSS phone mockups in `index.html` / `blackjack.html` can be swapped for `<img>` tags pointing at real screenshots in `images/` |
+| Real app screenshots | Gameplay uses the real screenshot (`images/blackjack-gameplay.png`); the Statistics and Strategy Trainer phones in `blackjack.html` are still CSS mockups that can be swapped the same way |
 | Social media URLs | The three `social-link` anchors in `contact.html` |
 | Canonical domain | If you are **not** using `froglabsllc.com`, update the `<link rel="canonical">`, `og:url`, and `og:image` tags in each page, plus `sitemap.xml` and `robots.txt` |
 

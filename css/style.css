@@ -737,6 +737,14 @@ p {
   text-align: left;
 }
 
+/* Real app screenshot inside the frame */
+.phone-shot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 32px;
+}
+
 /* Notch / Dynamic Island */
 .phone-screen::before {
   content: "";
