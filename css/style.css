@@ -696,7 +696,7 @@ p {
 }
 
 /* --------------------------------------------------------------------------
-   10. iPhone screenshot placeholders
+   10. iPhone screenshots
    -------------------------------------------------------------------------- */
 .phones {
   display: flex;
@@ -724,199 +724,20 @@ p {
   transform: translateY(-6px);
 }
 
-.phone-screen {
-  position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 44px 16px 20px;
-  background: linear-gradient(175deg, #0d1a12, #070b09 70%);
-  border-radius: 32px;
-  overflow: hidden;
-  text-align: left;
-}
-
-/* Real app screenshot inside the frame */
+/* Real app screenshot inside the frame. `contain` + a near-black
+   background lets non-fullscreen shots letterbox invisibly. */
 .phone-shot {
   width: 100%;
   height: 100%;
   object-fit: contain;
   border-radius: 32px;
-}
-
-/* Notch / Dynamic Island */
-.phone-screen::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 74px;
-  height: 20px;
-  border-radius: var(--radius-pill);
-  background: #000;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #0b0b0d;
 }
 
 .phone-caption {
   margin-top: 16px;
   font-size: 0.88rem;
   color: var(--text-muted);
-}
-
-/* --- Mock UI atoms (decorative only, aria-hidden) --- */
-.mock-status {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.mock-pill {
-  padding: 4px 10px;
-  font-size: 0.66rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--surface-strong);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-}
-
-.mock-label {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-}
-
-.mock-hand {
-  display: flex;
-  gap: 8px;
-}
-
-.mock-card {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 56px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: #10241a;
-  background: linear-gradient(170deg, #ffffff, #dfe9e2);
-  border-radius: 7px;
-  box-shadow: 0 6px 14px -6px rgba(0, 0, 0, 0.7);
-}
-
-.mock-card.red {
-  color: #c0392b;
-}
-
-.mock-card.down {
-  background: repeating-linear-gradient(45deg, #14532d, #14532d 5px, #166534 5px, #166534 10px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.mock-actions {
-  display: flex;
-  gap: 8px;
-  margin-top: auto;
-}
-
-.mock-btn {
-  flex: 1;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 0.74rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  background: var(--surface-strong);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-pill);
-}
-
-.mock-btn.primary {
-  color: var(--on-accent);
-  background: linear-gradient(135deg, #4ade80, #22c55e);
-  border-color: transparent;
-}
-
-.mock-title {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-.mock-big {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-  line-height: 1.1;
-}
-
-.mock-big span {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: var(--text-faint);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  margin-top: 4px;
-}
-
-.mock-stat {
-  display: grid;
-  gap: 6px;
-}
-
-.mock-stat-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.7rem;
-  color: var(--text-muted);
-}
-
-.mock-bar {
-  height: 6px;
-  border-radius: var(--radius-pill);
-  background: var(--surface-strong);
-  overflow: hidden;
-}
-
-.mock-bar span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #22c55e, #4ade80);
-}
-
-.mock-question {
-  padding: 14px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-align: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-}
-
-.mock-choices {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-.mock-toast {
-  margin-top: auto;
-  padding: 10px 12px;
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid rgba(74, 222, 128, 0.3);
-  border-radius: var(--radius-md);
 }
 
 /* --------------------------------------------------------------------------
